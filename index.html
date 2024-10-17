@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 style="text-transform: uppercase">Player 1 chose !</h1>
+      <div>
+        <button onclick="choseheads()">Heads</button>
+        <button onclick="chosetails()">Tails</button>
+      </div>
+      <h1 id="showPlayerChoics">-</h1>
+      <h1>Lets Toss The Coin !</h1>
+      <button onclick="coinToss()">
+        <i class="fa-brands fa-bitcoin"></i> Toss the coin !
+      </button>
+      <h1 id="showPlayerTossResult"></h1>
+      <button id="diceButton" onclick="rollDice()" disabled>
+        <i class="fa-solid fa-dice-six"></i> Roll the dice !
+      </button>
+      <h1 id="playerTurn"></h1>
+      <h1 id="gameStatus"></h1>
+      <h1 id="result"></h1>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>

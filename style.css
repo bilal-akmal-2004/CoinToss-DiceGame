@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Overpass", sans-serif;
+    background-color: rgb(227, 228, 228);
+    background-image: url(pics/dice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+}
+button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+button:hover{
+    background-color: rgb(191, 212, 231);
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+}
+@media (max-width: 500px) {
+    h1{
+        font-size: 31px;
+    }
+}
